@@ -1,6 +1,10 @@
 import json
+try:
+    with open("expenses.json", "r") as file:
+        expenses = json.load(file)
 
-expenses = []
+except:
+    expenses = []
 
 while True:
 
